@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        function find(x, y, z) {
+            max_value = 0;
+            if (x > y) {
+                max_value = x;
+            } else {
+                max_value = y;
+            }
+
+            if (z > max_value) {
+                max_value = z;
+            } else {
+                return max_value;
+            }
+        }
+
+        console.log(find(100, 0, 1));
+    </script>
+</body>
+</html>
